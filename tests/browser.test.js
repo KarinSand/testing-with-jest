@@ -34,3 +34,11 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+// Eget Selenium-test
+// kontrollera att sidans rubrik visas korrekt
+test('page should have correct heading', async () => {
+    let heading = await driver.findElement(By.tagName('h1')).getText();
+
+    expect(heading).toBe("Här kan vi leka med en stack");
+});

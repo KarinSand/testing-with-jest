@@ -17,3 +17,12 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+
+// Eget jest-test
+//kontrollera att pop returnerar det senast tillagda elementet
+test('pop should return last pushed element', () => {
+    stack.push("Äpple");
+
+    expect(stack.pop()).toBe("Äpple");
+});
