@@ -40,5 +40,5 @@ describe('Clicking "Pusha till stacken"', () => {
 test('page should have correct heading', async () => {
     let heading = await driver.findElement(By.tagName('h1')).getText();
 
-    expect(heading).toBe("Här får vi nu fel rubrik"); // Bör göra så att test misslyckas pga rubriken är "Stacken" i index.html
+    expect(heading).toBe("Här kan vi leka med en stack"); // ändrat tillbaka till rubrik. ska göra ett till test med felatkigt elementet i stack.test.js
 });
