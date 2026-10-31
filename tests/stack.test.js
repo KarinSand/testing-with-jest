@@ -26,3 +26,5 @@ test('pop should return last pushed element', () => {
 
     expect(stack.pop()).toBe("Äpple"); // Nu fixat
 });
+
+// båda testsviterna och alla 7 tester gick igenom.
