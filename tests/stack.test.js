@@ -24,5 +24,5 @@ test('peek on stack with two or more elements returns the top element', () => {
 test('pop should return last pushed element', () => {
     stack.push("Äpple");
 
-    expect(stack.pop()).toBe("Kiwi"); // Bör göra att test misslyckas pga senast tillagda elementet är "Äpple"
+    expect(stack.pop()).toBe("Äpple"); // Nu fixat
 });
